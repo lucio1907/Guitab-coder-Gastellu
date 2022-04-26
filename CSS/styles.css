@@ -401,7 +401,7 @@ footer{
     gap: 20px;
     background-color: #750B0E;
     width: 100vw;
-    height: 120vh;
+    height: 185vh;
 }
 
 .logo-catalogo{
@@ -428,49 +428,133 @@ footer{
     gap: 13%;
 }
 
+span{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #0A0908;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #000;
+    position: relative;
+    top: 0.62rem;
+    visibility: hidden;
+    transition: all .4s;
+    color: #fff;
+}
+
 .card-catalogo1{
     grid-area: card-catalogo1;
+    cursor: pointer;
+}
+
+.card-catalogo1:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo2{
     grid-area: card-catalogo2;
+    cursor: pointer;
+}
+
+.card-catalogo2:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo3{
     grid-area: card-catalogo3;
+    cursor: pointer;
+}
+
+.card-catalogo3:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo4{
     grid-area: card-catalogo4;
+    cursor: pointer;
+}
+
+.card-catalogo4:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo5{
     grid-area: card-catalogo5;
+    cursor: pointer;
+}
+
+.card-catalogo6:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo6{
     grid-area: card-catalogo6;
+    cursor: pointer;
+}
+
+.card-catalogo6:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo7{
     grid-area: card-catalogo7;
+    cursor: pointer;
+}
+
+.card-catalogo7:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo8{
     grid-area: card-catalogo8;
+    cursor: pointer;
+}
+
+.card-catalogo8:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo9{
     grid-area: card-catalogo9;
+    cursor: pointer;
+}
+
+.card-catalogo9:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 .card-catalogo10{
     grid-area: card-catalogo10;
+    cursor: pointer;
+}
+
+.card-catalogo10:hover span{
+    transform: scale(1.15);
+    visibility: visible;
+}
+
+.card-catalogo10-off{
+    display: none;
+    cursor: pointer;
+}
+
+.card-catalogo10-off:hover span{
+    transform: scale(1.15);
+    visibility: visible;
 }
 
 img{
-    width: 100px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 /* ---------------------------------- PAGINA 3 -------------------------------- */
@@ -657,13 +741,21 @@ label{
 }
 
 /* ---------------------------------- Media queries --------------------------------- */
+@media screen and (max-width: 1320px) {
+    .section-catalogo{
+        height: 134vh;
+    }
+}
 
 @media screen and (max-width: 1300px) {
     .video1{
         width: 100%;
     }
-}
 
+    .section-catalogo{
+        height: 127vh;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .a-logo{
@@ -762,7 +854,7 @@ label{
 
 @media screen and (max-width: 1030px) {
     .section-catalogo{
-        height: 204vh;
+        height: 111vh;
     }
 
     .logo-catalogo{
@@ -783,13 +875,13 @@ label{
     
     .ul-catalogo{
         display: grid;
-        grid-template-areas:"card-catalogo1 card-catalogo2 card-catalogo3"
-                            "card-catalogo4 card-catalogo5 card-catalogo6"
-                            "card-catalogo7 card-catalogo8 card-catalogo9";
+        grid-template-areas:"card-catalogo1 card-catalogo2 card-catalogo3 card-catalogo4 "
+                            "card-catalogo5 card-catalogo6 card-catalogo7"
+                            "card-catalogo8 card-catalogo9 card-catalogo10";
         justify-content: center;
         gap: 13%;
         position: relative;
-        left: 156px;
+        left: -12px;
     }
     
     .card-catalogo1{
@@ -868,6 +960,8 @@ label{
         border: none;
         background-color: #0A0908;
         display: block;
+        position: relative;
+        bottom: 4px;    
         transition: all 1s;
     }
 
@@ -879,6 +973,7 @@ label{
         color: #EDF2F4;
         padding: 10px;
         font-size: 24px;
+        visibility: visible;
     }
 
     .card1{
@@ -965,6 +1060,36 @@ label{
         grid-template-areas: 
                             "a-footer a-footer"
                             "a-logo a-logo";
+    }
+
+    .section-catalogo{
+        height: 357vh;
+    }
+
+    .ul-catalogo{
+        display: grid;
+        grid-template-areas:"card-catalogo1 card-catalogo2 card-catalogo3 "
+                            "card-catalogo4 card-catalogo5 card-catalogo6"
+                            "card-catalogo7 card-catalogo8 card-catalogo9"
+                            "card-catalogo10 card-catalogo10 card-catalogo10";
+    }
+
+    .card-catalogo10-off{
+        grid-area: card-catalogo10;
+        display: block;
+    }
+
+    .img-catalogo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-catalogo-off{
+        width: 100%;
+    }
+
+    .card-catalogo10{
+        display: none;
     }
 
     /* ------- Main -------- */
@@ -1104,6 +1229,14 @@ label{
     .contenedor-a-footer{
         width: max-content;
     }
+
+    .section-catalogo{
+        height: 305vh;
+    }
+
+    .img-catalogo-off{
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 711px) {
@@ -1153,6 +1286,31 @@ label{
         position: relative;
         right: 4.375rem;
     }
+
+    .grid-marcas{
+        display: grid;
+        grid-template-areas:"img-marca1 img-marca2"
+                            "img-marca3 img-marca4";
+        align-items: center;
+    }
+
+    .section-catalogo{
+        height: 249vh;
+    }
+    
+    .img-catalogo-off{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    .section-catalogo{
+        height: 222vh;
+    }
+
+    .img-catalogo-off{
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1165,6 +1323,60 @@ label{
 
     .contenedor-a-footer{
         flex-direction: column;
+    }
+
+    .h2-main2{
+        text-align: center;
+    }
+
+    .grid-marcas{
+        transform: scale(1);
+        padding: 20px;
+    }
+
+    .card-marca1{
+        transform: scale(1.5);
+    }
+
+    .card-marca2{
+        transform: scale(1.5);
+    }
+
+    .card-marca3{
+        transform: scale(1.5);
+    }
+
+    .card-marca4{
+        transform: scale(1.5);
+    }
+
+    .ul-catalogo {
+        display: grid;
+        grid-template-areas:"card-catalogo1 card-catalogo2"
+                            "card-catalogo3 card-catalogo4"
+                            "card-catalogo5 card-catalogo6"
+                            "card-catalogo7 card-catalogo8"
+                            "card-catalogo9 card-catalogo10";
+        position: relative;
+        left: -17px;
+    }
+
+    .section-catalogo{
+        height: 425vh;
+    }
+
+    .card-catalogo10-off{
+        display: none;
+    }
+
+    .card-catalogo10{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section-catalogo{
+        height: 370vh;
     }
 }
 
@@ -1241,7 +1453,7 @@ label{
                             "card-catalogo7 card-catalogo8"
                             "card-catalogo9 card-catalogo10";
         justify-content: center;
-        gap: 13%;
+        gap: 11%;
         position: relative;
         left: -22px;
     }
@@ -1249,6 +1461,14 @@ label{
     .img-catalogo{
         width: 100px;
         height: 267px;
+    }
+
+    .card-catalogo10-off{
+        display: none;
+    }
+
+    .card-catalogo10{
+        display: block;
     }
 
     .logo-marca{
@@ -1272,6 +1492,8 @@ label{
     .grid-marcas{
         position: relative;
         bottom: 1.06rem;
+        gap: 25%;
+        padding: 29px;
     }
 
     .img-marcas-catalogo {
