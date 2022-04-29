@@ -1,0 +1,37 @@
+/* ------------------------------- PAGINA 5 --------------------------------------- */
+$background-color:#0A0908;
+$letra-color: #EDF2F4;
+
+.flex-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+    label{
+        color: $letra-color;
+        .label-area{
+            color: #000;
+        }
+    }
+
+    .mb-3 .form-control{
+        display: flex;
+        width: 50vw;
+    }
+
+    .logo-contacto{
+        position: absolute;
+        bottom: 70vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h1-contacto{
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 100px;
+        color: $letra-color;
+    }
+}

@@ -1,0 +1,775 @@
+$color-black: #0A0908;
+$color-white: #EDF2F4;
+$height-cards: 78%;
+/* ---------------------------------- Media queries --------------------------------- */
+@media screen and (max-width: 1320px) {
+    .section-catalogo{
+        height: 134vh;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .video1{
+        width: 100%;
+    }
+
+    .section-catalogo{
+        height: 127vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .a-logo{
+        grid-area: a-logo;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 36px;
+        color: $color-black;
+        position: relative;
+        right: 20%;
+    }
+
+    .grid-main-carrera{
+        display: grid;
+        grid-template-areas:"img-carrera1 img-carrera1"
+                            "text1 text1"
+                            "img-carrera2 img-carrera2"
+                            "text2 text2"
+                            "img-carrera3 img-carrera3"
+                            "text3 text3"
+                            "img-carrera4 img-carrera4"
+                            "text4 text4";
+        .img-carrera1{
+            padding: 15px;
+            position: relative;
+            top: 13px;
+        }
+                        
+        .img-carrera2{
+            padding: 15px;
+            position: relative;
+            top: 13px;
+        }
+                        
+        .img-carrera3{
+            padding: 15px;
+            position: relative;
+            top: 13px;
+        }
+                        
+        .img-carrera4{
+            padding: 15px;
+            position: relative;
+            top: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .video1{
+        display: flex;
+        width: 100%;
+        margin: 2.5rem auto;
+    }
+
+    .card1{
+        grid-area: card1;
+        display: flex;
+        justify-content: space-evenly;
+        height: $height-cards;
+        margin-top: 5.25rem;
+    }
+    
+    .card2{
+        grid-area: card2;
+        display: flex;
+        justify-content: space-evenly;
+        height: $height-cards;
+        margin-top: 5.25rem;
+    }
+    
+    .card3{
+        grid-area: card3;
+        display: flex;
+        justify-content: space-evenly;
+        height: $height-cards;
+        margin-top: 5.25rem;
+    }
+    
+    .card4{
+        grid-area: card4;
+        display: flex;
+        justify-content: space-evenly;
+        height: $height-cards;
+        margin-top: 5.25rem;
+    }
+    
+    .a-cards{
+        text-align: center;
+        color: $color-black;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 24px;
+        transition: all .6s;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .section-catalogo{
+        height: 111vh;
+        .logo-catalogo{
+            width: 100vw;
+            background-color: $color-black;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            right: 32px;
+            top: -30px;
+        }
+    }
+    
+    .logo-marca{
+        width: 30%;
+        height: 50%;
+    }
+    
+    .ul-catalogo{
+        display: grid;
+        grid-template-areas:"card-catalogo1 card-catalogo2 card-catalogo3 card-catalogo4 "
+                            "card-catalogo5 card-catalogo6 card-catalogo7"
+                            "card-catalogo8 card-catalogo9 card-catalogo10";
+        justify-content: center;
+        gap: 13%;
+        position: relative;
+        left: -12px;
+        .card-catalogo1{
+            grid-area: card-catalogo1;
+        }
+        
+        .card-catalogo2{
+            grid-area: card-catalogo2;
+        }
+        
+        .card-catalogo3{
+            grid-area: card-catalogo3;
+        }
+        
+        .card-catalogo4{
+            grid-area: card-catalogo4;
+        }
+        
+        .card-catalogo5{
+            grid-area: card-catalogo5;
+        }
+    
+        .card-catalogo6{
+            grid-area: card-catalogo6;
+        }
+        
+        .card-catalogo7{
+            grid-area: card-catalogo7;
+        }
+        
+        .card-catalogo8{
+            grid-area: card-catalogo8;
+        }
+        
+        .card-catalogo9{
+            grid-area: card-catalogo9;
+        }
+        
+        .card-catalogo10{
+            grid-area: card-catalogo10;
+        }
+        
+        img{
+            width: 100px;
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 982px) {
+    .grid{
+        display: grid;
+        grid-template-areas: 
+                            "nav nav nav"
+                            "main main main"
+                            "main main main"
+                            "artistas artistas artistas"
+                            "section section section"
+                            "footer footer footer";
+    }
+
+    .navbar-collapse{
+        height: 100vh;
+    }
+
+    .navbar-nav{
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        height: 50vh;
+        position: relative;
+        top: 25%;
+    }
+
+    .navbar-toggler1{
+        padding: 10px;
+        border: none;
+        background-color: $color-black;
+        display: block;
+        position: relative;
+        bottom: 4px;    
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .icon{
+            color: $color-white;
+            padding: 10px;
+            font-size: 24px;
+            visibility: visible;
+        }
+    }
+
+    .card1{
+        height: 75%;
+    }
+    
+    .card2{
+        height: 75%;
+    }
+    
+    .card3{
+        height: 75%;
+    }
+    
+    .card4{
+        height: 75%;
+    }
+    
+    .a-cards{
+        font-size: 22px;
+    }
+
+    .img-card1{
+        width: 90%;
+    }
+    
+    .img-card2{
+        width: 90%;
+    }
+    
+    .img-card3{
+        width: 90%;
+    }
+    
+    .img-card4{
+        width: 77%;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .grid{
+        display: grid;
+        grid-template-areas: 
+                            "nav nav"
+                            "main main"
+                            "main main"
+                            "artistas artistas"
+                            "section section"
+                            "footer footer";
+        .grid-header{
+            display: grid;
+            grid-template-areas:"logo logo"
+                                "nav nav";
+        }
+    
+        .grid-main{
+            display: grid;
+            grid-template-areas: 
+                                "video video"
+                                "card1 card2"
+                                "card3 card4";
+            height: 200vh;
+        }
+    
+        .grid-artistas{
+            display: grid;
+            grid-template-areas: 
+                                "artistas artistas"
+                                "artistas artistas";
+        }
+        
+        .grid-section{
+            display: grid;
+            grid-template-areas: 
+                                "card-section1 card-section2"
+                                "card-section3 card-section4";
+            height: 100vh;
+        }
+    
+        .grid-footer{
+            display: grid;
+            grid-template-areas: 
+                                "a-footer a-footer"
+                                "a-logo a-logo";
+        }
+}
+
+    
+
+    .section-catalogo{
+        height: 357vh;
+        .ul-catalogo{
+            display: grid;
+            grid-template-areas:"card-catalogo1 card-catalogo2 card-catalogo3 "
+                                "card-catalogo4 card-catalogo5 card-catalogo6"
+                                "card-catalogo7 card-catalogo8 card-catalogo9"
+                                "card-catalogo10 card-catalogo10 card-catalogo10";
+            .card-catalogo10-off{
+                grid-area: card-catalogo10;
+                display: block;
+            }
+        
+            .img-catalogo{
+                width: 100%;
+                height: 100%;
+            }
+        
+            .img-catalogo-off{
+                width: 100%;
+            }
+        
+            .card-catalogo10{
+                display: none;
+            }
+        }
+    }
+
+    /* ------- Main -------- */
+    .card1{
+        display: flex;
+        width: 100%;
+        height: 45%;
+    }
+    
+    .card2{
+        display: flex;
+        width: 100%;
+        height: 45%;
+    }
+    
+    .card3{
+        display: flex;
+        width: 100%;
+        height: 45%;
+        position: relative;
+        bottom: 64%;
+    }
+    
+    .card4{
+        display: flex;
+        width: 100%;
+        height: 45%;
+        position: relative;
+        bottom: 64%;
+    }
+    
+    .a-cards{
+        text-align: center;
+        color: $color-black;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 24px;
+        transition: all .6s;
+    }
+
+    /* ----- Section ------ */
+    .card-section1{
+        display: flex;
+        width: 100%;
+        height: 70%;
+    }
+    
+    .card-section2{
+        display: flex;
+        width: 100%;
+        height: 70%;
+    }
+    
+    .card-section3{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        position: relative;
+        bottom: 25%;
+    }
+    
+    .card-section4{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        position: relative;
+        bottom: 25%;
+    }
+    
+    .img-section{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ----- Footer ------ */
+    .contenedor-a-footer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    .cards-equipo {
+        width: 36vw;
+        height: 30vh;
+    }
+
+    .div-description{
+        bottom: 17.43rem;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    .a-header{
+        width: max-content;
+        padding: 1.25rem;
+    }
+
+    .video1{
+        display: flex;
+        width: 100%;
+        margin: 4.5rem -0.5rem;
+    }
+
+    .card3{
+        margin-top: 1.25rem;
+    }
+
+    .card4{
+        margin-top: 1.25rem;
+    }
+
+    .grid-section{
+        height: 100vh;
+        .card-section1{
+            height: 100%;
+        }
+    
+        .card-section2{
+            height: 100%;
+        }
+    
+        .card-section3{
+            position: relative;
+            top: 5px;
+            height: 100%;
+        }
+    
+        .card-section4{
+            position: relative;
+            top: 5px;
+            height: 100%;
+        }
+    }
+
+    .contenedor-a-footer{
+        width: max-content;
+    }
+
+    .section-catalogo{
+        height: 305vh;
+        .img-catalogo-off{
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 711px) {
+    .grid-main{
+        height: 194vh;
+    }
+
+    .grid-footer{
+        height: 0vh;
+    }
+    
+    .a-logo-header{
+        font-size: 36px;
+    }
+
+    .nav{
+        padding: 2px;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+    }
+
+    .a-header{
+        font-size: 19px;
+    }
+
+    .video-main{
+        height: 100vh;
+        .video1{
+            position: relative;
+            left: 1%;
+        }
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-linkf:nth-child(6){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 627px) {
+    .grid-section-equipo{
+        position: relative;
+        right: 1.375rem;
+    }
+
+    .grid-section-equipo .cards-equipo {
+        width: 100vw;
+        height: 31vh;
+    }
+
+    .grid-marcas{
+        display: grid;
+        grid-template-areas:"img-marca1 img-marca2"
+                            "img-marca3 img-marca4";
+        align-items: center;
+    }
+
+    .section-catalogo{
+        height: 249vh;
+        .logo-catalogo{
+            .logo-marca{
+                height: 11vh;
+                width: 45vw;
+            }
+        }
+        .img-catalogo-off{
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 557px) {
+    .section-catalogo{
+        height: 222vh;
+    }
+
+    .img-catalogo-off{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .contenedor-a-footer{
+        flex-direction: column;
+    }
+
+    .h2-main2{
+        text-align: center;
+    }
+
+    .grid-marcas{
+        transform: scale(1);
+        padding: 20px;
+    }
+
+    .card-marca1{
+        transform: scale(1.5);
+    }
+
+    .card-marca2{
+        transform: scale(1.5);
+    }
+
+    .card-marca3{
+        transform: scale(1.5);
+    }
+
+    .card-marca4{
+        transform: scale(1.5);
+    }
+
+    .ul-catalogo {
+        display: grid;
+        grid-template-areas:"card-catalogo1 card-catalogo2"
+                            "card-catalogo3 card-catalogo4"
+                            "card-catalogo5 card-catalogo6"
+                            "card-catalogo7 card-catalogo8"
+                            "card-catalogo9 card-catalogo10";
+        position: relative;
+        left: -17px;
+    }
+
+    .section-catalogo{
+        height: 425vh;
+    }
+
+    .card-catalogo10-off{
+        display: none;
+    }
+
+    .card-catalogo10{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section-catalogo{
+        height: 370vh;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .grid{
+        display: grid;
+        grid-template-areas: 
+                            "nav nav"
+                            "main main"
+                            "main main"
+                            "artistas artistas"
+                            "section section"
+                            "footer footer";
+    .grid-main{
+        height: 100vh;
+        .video-main{
+            height: 25vh;
+            .video1{
+                position: relative;
+                top: -9vh;
+                left: 1%;
+                height: 23vh;
+            }
+        }
+    }
+}
+
+    .card1{
+        height: 60%;
+    }
+
+    .card2{
+        height: 60%;
+    }
+
+    .card3{
+        height: 60%;
+        margin-top: 8.25rem;
+    }
+
+    .card4{
+        height: 60%;
+        margin-top: 8.25rem;
+    }
+
+    .a-cards{
+        font-size: 16px;
+    }
+
+    .card-section1{
+        height: 80%;
+    }
+
+    .card-section2{
+        height: 80%;
+    }
+
+    .card-section3{
+        height: 80%;
+    }
+
+    .card-section4{
+        height: 80%;
+    }
+
+    .section-catalogo{
+        height: 250vh;
+        .ul-catalogo{
+            display: grid;
+            grid-template-areas:"card-catalogo1 card-catalogo2"
+                                "card-catalogo3 card-catalogo4"
+                                "card-catalogo5 card-catalogo6"
+                                "card-catalogo7 card-catalogo8"
+                                "card-catalogo9 card-catalogo10";
+            justify-content: center;
+            gap: 11%;
+            position: relative;
+            left: -22px;
+            .img-catalogo{
+                width: 100px;
+                height: 267px;
+            }
+            .card-catalogo10-off{
+                display: none;
+            }
+        
+            .card-catalogo10{
+                display: block;
+            }
+        
+            .logo-marca{
+                width: 62%;
+                height: 50%;
+            }
+        }
+    }
+
+    .contenedor-a-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-h2{
+        padding: 1.25rem;
+    }
+
+    .grid-marcas{
+        position: relative;
+        bottom: 1.06rem;
+        gap: 25%;
+        padding: 29px;
+        .img-marcas-catalogo {
+            width: 80%;
+            height: 100%;
+        }
+    }
+
+    .grid-section-equipo{
+        width: 120%;
+    }
+
+    .grid-section-equipo .div-description {
+        bottom: 18rem;
+    }
+    .form-control{
+        width: 72vw;
+    }
+
+    .mb-3 .form-control {
+        width: 72vw;
+    }
+
+    .grid-section-equipo .cards-equipo {
+        width: 82vw;
+        height: 31vh;
+        position: relative;
+        right: 13px;
+    }
+
+}

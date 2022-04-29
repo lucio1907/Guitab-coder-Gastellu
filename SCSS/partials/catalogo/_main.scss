@@ -1,0 +1,231 @@
+$fuente-titulo: 'Comfortaa', cursive;
+$fuente-contenedor: 'Baloo 2', cursive;
+$background-section: #750B0E;
+$background-logo-section: #0A0908;
+
+/* ---------------------------------- PAGINA 2 -------------------------------- */
+/* ---------------------------------- Main 2 ------------------------------------- */
+.title-catalogo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.25rem;
+    font-family: $fuente-titulo
+}
+
+.parrafo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+    padding: 1.87rem;
+}
+
+.contenedor-h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: $fuente-contenedor
+}
+
+/* --------------- Grid marcas --------------------- */
+
+.grid-marcas{
+    display: grid;
+    grid-template-areas:"img-marca1 img-marca2 img-marca3 img-marca4";
+    align-items: center;
+    .card-marca1{
+        grid-area: img-marca1;
+        display: flex;
+        width: 100%;
+    }
+    .card-marca2{
+        grid-area: img-marca2;
+        display: flex;
+        width: 100%;
+    }
+
+    .card-marca3{
+        grid-area: img-marca3;
+        display: flex;
+        width: 100%;
+    }
+    
+    .card-marca4{
+        grid-area: img-marca4;
+        display: flex;
+        width: 100%;
+    }
+
+    .a-marcas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .6s;
+        &:hover{
+            transform: scale(1.10);
+        }
+    }
+    
+    .img-marcas-catalogo{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+/* ------------------------------ Section2 -------------------------------- */
+
+.section-catalogo{
+    grid-area: section;
+    padding: 30px;
+    gap: 20px;
+    background-color: $background-section;
+    width: 100vw;
+    height: 185vh;
+    .logo-catalogo{
+        width: 100vw;
+        background-color: $background-logo-section;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+        right: 2rem;
+        top: -30px;
+        .logo-marca{
+            width: 30%;
+            height: 50%;
+        }        
+    }
+}
+
+
+.ul-catalogo{
+    display: grid;
+    grid-template-areas:"card-catalogo1 card-catalogo2 card-catalogo3 card-catalogo4 card-catalogo5"
+                        "card-catalogo6 card-catalogo7 card-catalogo8 card-catalogo9 card-catalogo10";
+    justify-content: center;
+    gap: 13%;
+    
+    span{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: #0A0908;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px #000;
+        position: relative;
+        top: 0.62rem;
+        visibility: hidden;
+        transition: all .4s;
+        color: #fff;
+    }
+
+    .card-catalogo1{
+        grid-area: card-catalogo1;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+
+    .card-catalogo2{
+        grid-area: card-catalogo2;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+    
+    .card-catalogo3{
+        grid-area: card-catalogo3;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+
+    .card-catalogo4{
+        grid-area: card-catalogo4;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+
+    .card-catalogo5{
+        grid-area: card-catalogo5;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+
+    .card-catalogo6{
+        grid-area: card-catalogo6;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+    
+    
+    .card-catalogo7{
+        grid-area: card-catalogo7;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+    
+    
+    .card-catalogo8{
+        grid-area: card-catalogo8;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+    
+    
+    .card-catalogo9{
+        grid-area: card-catalogo9;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+    
+    
+    .card-catalogo10{
+        grid-area: card-catalogo10;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+    
+    
+    .card-catalogo10-off{
+        display: none;
+        cursor: pointer;
+        &:hover span{
+            transform: scale(1.15);
+            visibility: visible;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

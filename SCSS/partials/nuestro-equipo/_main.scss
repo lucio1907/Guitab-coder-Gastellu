@@ -1,0 +1,78 @@
+$color-hover: #a5afb3;
+
+contenedor-h1-equipo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+.h1-equipo{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+.contenedor-parrafo-equipo{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 64px;
+    padding: 12px;
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        color: $color-hover;
+    }
+}
+
+/* -------------------- Section equipo --------------------- */
+
+.grid-section-equipo{
+    grid-area: artistas;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+    height: 100%;
+    gap: 15px;
+    background-color: #0A0908;
+    .cards-equipo{
+        width: 23vw;
+        height: 37vh;
+        &:hover .div-description{
+            visibility: visible;
+            background-color: #EDF2F4;
+        }
+        .img-staff{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .div-description{
+        height: 100%;
+        position: relative;
+        bottom: 21.5rem;
+        visibility: hidden;
+        transition: all .4s;
+        .description{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Comfortaa', cursive;
+            color: #0A0908;
+        }
+    }
+}
+

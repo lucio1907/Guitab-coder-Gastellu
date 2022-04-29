@@ -1,0 +1,61 @@
+/* ------------------------------- PAGINA 4 --------------------------------------- */
+$width-heigth: 100%;
+$padding-imagenes: 20px;
+
+.grid-main-carrera{
+    display: grid;
+    grid-template-areas:"text1 img-carrera1"
+                        "img-carrera2 text2"
+                        "text3 img-carrera3"
+                        "img-carrera4 text4";
+    .text1{
+        grid-area: text1;
+    }
+                        
+    .text2{
+        grid-area: text2;
+    }
+                        
+    .text3{
+        grid-area: text3;
+    }
+                        
+    .text4{
+        grid-area: text4;
+    }
+
+    .img-carrera1{
+        grid-area: img-carrera1;
+        padding: $padding-imagenes;
+    }
+    
+    .img-carrera2{
+        grid-area: img-carrera2;
+        padding: $padding-imagenes;
+    }
+    
+    .img-carrera3{
+        grid-area: img-carrera3;
+        padding: $padding-imagenes;
+    }
+    
+    .img-carrera4{
+        grid-area: img-carrera4;
+        padding: $padding-imagenes;
+    }
+
+    .img-carreras{
+        width: $width-heigth;
+        height: $width-heigth;
+        object-fit: contain;
+    }
+
+    .parrafo-carrera{
+        width: $width-heigth;
+        height: $width-heigth;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: $padding-imagenes;
+    }
+}

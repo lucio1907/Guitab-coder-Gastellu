@@ -1,0 +1,47 @@
+$color-letras:#EDF2F4;
+$color-background:#750B0E;
+
+/* ------------------------------------- seccion ------------------------------------- */
+.grid-artistas{
+    grid-area: artistas;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: $color-background;
+}
+
+.h1-artistas{
+    color: #EDF2F4;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.grid-section{
+    grid-area: section;
+    padding: 30px;
+    gap: 20px;
+    background-color: $color-background;
+    width: 100vw;
+    .card-section1{
+        grid-area: card-section1;
+    }
+
+    .card-section2{
+        grid-area: card-section2;
+    }
+
+    .card-section3{
+        grid-area: card-section3;
+    }
+
+    .card-section4{
+        grid-area: card-section4;
+    }
+    
+    .img-section{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
