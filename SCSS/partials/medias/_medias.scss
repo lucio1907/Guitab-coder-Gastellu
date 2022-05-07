@@ -2,9 +2,37 @@ $color-black: #0A0908;
 $color-white: #EDF2F4;
 $height-cards: 78%;
 /* ---------------------------------- Media queries --------------------------------- */
+@media screen and (max-width: 1335px) {
+    .section-catalogo{
+        height: 273vh;
+    }
+
+    .contenedor-h2{
+        top: 16%;
+    }
+
+    .grid-marcas{
+        top: 20%;
+        .img-marcas-catalogo{
+            width: 70%;
+        }
+    }
+}
+
 @media screen and (max-width: 1320px) {
     .section-catalogo{
-        height: 134vh;
+        height: 260vh;
+    }
+
+    .contenedor-h2{
+        top: 18%;
+    }
+
+    .grid-marcas{
+        top: 21%;
+        .img-marcas-catalogo{
+            width: 70%;
+        }
     }
 }
 
@@ -14,11 +42,23 @@ $height-cards: 78%;
     }
 
     .section-catalogo{
-        height: 127vh;
+        height: 250vh;
     }
 }
 
 @media screen and (max-width: 1200px) {
+    .contenedor-h2 {
+        top: 20%;
+    }
+
+    .grid-marcas {
+        top: 23%;
+    }
+
+    .section-catalogo .logo-catalogo .logo-marca {
+        width: 40%;
+    }
+
     .a-logo{
         grid-area: a-logo;
         font-family: 'Shadows Into Light', cursive;
@@ -114,7 +154,7 @@ $height-cards: 78%;
 
 @media screen and (max-width: 1030px) {
     .section-catalogo{
-        height: 111vh;
+        height: 237vh;
         .logo-catalogo{
             width: 100vw;
             background-color: $color-black;
@@ -125,6 +165,17 @@ $height-cards: 78%;
             right: 32px;
             top: -30px;
         }
+    }
+
+    .contenedor-h2{
+        top: 22%;
+        .h2-main2{
+            font-size: 30px;
+        }
+    }
+
+    .grid-marcas{
+        top: 25%;
     }
     
     .logo-marca{
@@ -317,20 +368,32 @@ $height-cards: 78%;
         }
 }
 
-    
+    .contenedor-h2 {
+        top: 11%;
+    }
+
+    .grid-marcas {
+        top: 12%;
+    }
+
 
     .section-catalogo{
-        height: 357vh;
+        height: 588vh;
+        .gibson{
+            top: 12%;
+        }
+        .logo-catalogo{
+            .logo-marca{
+                width: 55%;
+                height: 90%;
+            }
+        }
         .ul-catalogo{
             display: grid;
             grid-template-areas:"card-catalogo1 card-catalogo2 card-catalogo3 "
                                 "card-catalogo4 card-catalogo5 card-catalogo6"
                                 "card-catalogo7 card-catalogo8 card-catalogo9"
                                 "card-catalogo10 card-catalogo10 card-catalogo10";
-            .card-catalogo10-off{
-                grid-area: card-catalogo10;
-                display: block;
-            }
         
             .img-catalogo{
                 width: 100%;
@@ -419,6 +482,10 @@ $height-cards: 78%;
     }
 
     /* ----- Footer ------ */
+    footer .nav-linkf:nth-child(6){
+        position: absolute;
+        left: 87vw;
+    }
     .contenedor-a-footer{
         display: flex;
         width: 100%;
@@ -480,17 +547,34 @@ $height-cards: 78%;
         }
     }
 
+    .contenedor-h2{
+        top: 14%;
+    }
+
+    .grid-marcas{
+        top: 15%;
+    }
+
     .contenedor-a-footer{
         width: max-content;
     }
 
     .section-catalogo{
-        height: 305vh;
+        height: 500vh;
         .img-catalogo-off{
             height: 100%;
         }
     }
+
+    footer .nav-linkf:nth-child(6){
+        display: none;
+    }
+    
+    footer .nav{
+        justify-content: center;
+    }
 }
+
 
 @media screen and (max-width: 711px) {
     .grid-main{
@@ -533,6 +617,23 @@ $height-cards: 78%;
     }
 }
 
+@media screen and (max-width: 680px) {
+    .section-catalogo{
+        height: 456vh;
+    }
+
+    .contenedor-h2 {
+        top: 15%;
+        .h2-main2{
+            font-size: 23px;
+        }
+    }
+
+    .grid-marcas {
+        top: 16%;
+    }
+}
+
 @media screen and (max-width: 627px) {
     .grid-section-equipo{
         position: relative;
@@ -544,15 +645,27 @@ $height-cards: 78%;
         height: 31vh;
     }
 
+    .contenedor-h2{
+        top: 17%;
+    }
+
     .grid-marcas{
         display: grid;
         grid-template-areas:"img-marca1 img-marca2"
                             "img-marca3 img-marca4";
         align-items: center;
+        top: 18%;
+        .img-marcas-catalogo{
+            width: 46%;
+        }
+    }
+
+    .grid-main-catalogo{
+        height: 120vh;
     }
 
     .section-catalogo{
-        height: 249vh;
+        height: 412vh;
         .logo-catalogo{
             .logo-marca{
                 height: 11vh;
@@ -566,12 +679,39 @@ $height-cards: 78%;
 }
 
 @media screen and (max-width: 557px) {
-    .section-catalogo{
-        height: 222vh;
+    .contenedor-h2{
+        top: 20%;
+        .h2-main2{
+            font-size: 20px;
+        }
     }
 
-    .img-catalogo-off{
-        height: 100%;
+    .grid-marcas{
+        top: 60.87rem;
+    }
+
+    .section-catalogo{
+        height: 372vh;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .grid-main-catalogo{
+        height: 136vh;
+        .contenedor-h2{
+            top: 22%;
+            .h2-main2{
+                font-size: 19px;
+            }
+        }
+    }
+
+    .section-catalogo {
+        height: 346vh;
+    }
+    
+    .grid-marcas{
+        top: 66.87rem;
     }
 }
 
@@ -606,6 +746,20 @@ $height-cards: 78%;
         transform: scale(1.5);
     }
 
+    .grid-main-catalogo{
+        height: 160vh;
+        .contenedor-h2{
+            top: 26%;
+        }
+    }
+
+    .grid-marcas {
+        top: 77.87rem;
+        .img-marcas-catalogo{
+            width: 60%;
+        }
+    }
+
     .ul-catalogo {
         display: grid;
         grid-template-areas:"card-catalogo1 card-catalogo2"
@@ -617,8 +771,12 @@ $height-cards: 78%;
         left: -17px;
     }
 
-    .section-catalogo{
-        height: 425vh;
+    .section-catalogo {
+        height: 312vh;
+        .logo-catalogo .logo-marca{
+            height: 19vh;
+            width: 83vw;
+        }
     }
 
     .card-catalogo10-off{
@@ -630,9 +788,26 @@ $height-cards: 78%;
     }
 }
 
+@media screen and (max-width: 410px) {
+    .section-catalogo{
+        height: 269vh;
+    }
+
+    .grid-main-catalogo{
+        height: 150vh;
+        .contenedor-h2{
+            top: 28%;
+        }
+    }
+
+    .grid-marcas{
+        top: 74.87rem;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .section-catalogo{
-        height: 370vh;
+        height: 283vh;
     }
 }
 
@@ -698,8 +873,24 @@ $height-cards: 78%;
         height: 80%;
     }
 
+    .grid-main-catalogo{
+        height: 165vh;
+        .contenedor-h2{
+            top: 19%;
+        }
+    }
+
     .section-catalogo{
-        height: 250vh;
+        height: 525vh;
+        .gibson{
+            top: 15%;
+        }
+        .logo-catalogo{
+            .logo-marca{
+                height: 20vh;
+                width: 89vw;
+            }
+        }
         .ul-catalogo{
             display: grid;
             grid-template-areas:"card-catalogo1 card-catalogo2"
@@ -710,13 +901,10 @@ $height-cards: 78%;
             justify-content: center;
             gap: 11%;
             position: relative;
-            left: -22px;
+            left: -11px;
             .img-catalogo{
                 width: 100px;
                 height: 267px;
-            }
-            .card-catalogo10-off{
-                display: none;
             }
         
             .card-catalogo10{
@@ -735,13 +923,9 @@ $height-cards: 78%;
         flex-direction: column;
     }
 
-    .contenedor-h2{
-        padding: 1.25rem;
-    }
-
     .grid-marcas{
         position: relative;
-        bottom: 1.06rem;
+        top: 5%;
         gap: 25%;
         padding: 29px;
         .img-marcas-catalogo {
@@ -770,6 +954,10 @@ $height-cards: 78%;
         height: 31vh;
         position: relative;
         right: 13px;
+    }
+
+    .flex-main .mb-3 .form-control {
+        width: 66vw;
     }
 
 }

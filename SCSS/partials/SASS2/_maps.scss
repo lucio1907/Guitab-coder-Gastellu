@@ -1,0 +1,31 @@
+@import "../footer";
+
+$footer:(
+    color: #000, 
+    ancho: 100vw,
+    Fsize: 17px,
+    fuente:'Montserrat',
+    hover: scale(1.25),
+    hoverColor: $red,
+    posicion: absolute,
+);
+
+footer {
+    background-color: map-get($footer , color);
+    width: map-get($footer , ancho);
+    position: map-get($footer, posicion);
+    .nav-linkf{
+        font-size: map-get($footer, Fsize);
+        font-family: map-get($footer, fuente);
+        &:hover{
+            color: map-get($footer, hoverColor);
+        }
+    }
+    .nav-linkf:nth-child(6){
+        position: map-get($footer, posicion);
+        &:hover{
+            transform: map-get($footer, hover);
+        }
+    }
+}
+

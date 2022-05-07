@@ -1,3 +1,4 @@
+@import "./SASS2/mixins";
 $color-letras:#EDF2F4;
 $color-background:#750B0E;
 $margin-cards: 5.25rem;
@@ -26,34 +27,22 @@ main{
 
 .card1{
     grid-area: card1;
-    display: flex;
-    justify-content: space-evenly;
-    height: 82%;
-    margin-top: $margin-cards;
+    @include cards;
 }
 
 .card2{
     grid-area: card2;
-    display: flex;
-    justify-content: space-evenly;
-    height: 82%;
-    margin-top: $margin-cards;
+    @include cards;
 }
 
 .card3{
     grid-area: card3;
-    display: flex;
-    justify-content: space-evenly;
-    height: 82%;
-    margin-top: $margin-cards;
+    @include cards;
 }
 
 .card4{
     grid-area: card4;
-    display: flex;
-    justify-content: space-evenly;
-    height: 82%;
-    margin-top: $margin-cards;
+    @include cards;
 }
 
 .a-cards{
@@ -70,33 +59,17 @@ main{
 }
 
 .img-card1{
-    display: flex;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    margin: 0 10%;
+    @include imagen-cards;
 }
 
 .img-card2{
-    display: flex;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    margin: 0 10%;
+    @include imagen-cards;
 }
 
 .img-card3{
-    display: flex;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    margin: 0 10%;
+    @include imagen-cards;
 }
 
 .img-card4{
-    display: flex;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    margin: 0 10%;
+    @include imagen-cards;
 }

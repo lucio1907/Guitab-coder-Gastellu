@@ -1,43 +1,32 @@
 $red: #EF233C;
-
+$footer: 100vw;
 /* ------------------------------------- footer ------------------------------------- */
 footer{
     grid-area: footer;
-    background-color: #0A0908;
     padding-top: 20px;
-    position: absolute;
     bottom: 0;
-    width: 100%;
+    width: $footer;
     .nav{
         grid-area: footer;
-        width: 100vw;
+        width: $footer;
         padding: 10px;
         background-color: #0A0908;
     }
 
     .nav-linkf{
         color: #EDF2F4;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 17px;
         text-decoration: none;
         padding: 10px;
         margin: 0px 10px;
-        &:hover{
-            color: $red;
-        }
     }
 
     .nav-linkf:nth-child(6){
-        position: absolute;
         left: 94vw;
         bottom: 4px;
         font-family: 'Shadows Into Light', cursive;
         font-size: 30px;
         align-items: center;
         transition: all .7s;
-        &:hover{
-            transform: scale(1.25);
-        }
     }
 }
 

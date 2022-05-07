@@ -1,10 +1,17 @@
+@import "../SASS2/extends";
+@import "../SASS2/mixins";
 $fuente-titulo: 'Comfortaa', cursive;
 $fuente-contenedor: 'Baloo 2', cursive;
 $background-section: #750B0E;
-$background-logo-section: #0A0908;
+$background-logo-section: #d3d2cf;
 
 /* ---------------------------------- PAGINA 2 -------------------------------- */
 /* ---------------------------------- Main 2 ------------------------------------- */
+.grid-main-catalogo{
+    height: 100vh;
+    background-color: $background-logo-section;
+}
+
 .title-catalogo{
     display: flex;
     justify-content: center;
@@ -19,13 +26,21 @@ $background-logo-section: #0A0908;
     justify-content: center;
     text-align: justify;
     padding: 1.87rem;
+    font-size: 24px;
+    font-family: $fuente-contenedor;
 }
 
 .contenedor-h2{
     display: flex;
     justify-content: center;
     width: 100%;
-    font-family: $fuente-contenedor
+    font-family: $fuente-contenedor;
+    position: absolute;
+    top: 13%;
+    .h2-main2{
+        font-size: 35px;
+        font-family: $fuente-titulo;
+    }
 }
 
 /* --------------- Grid marcas --------------------- */
@@ -34,6 +49,8 @@ $background-logo-section: #0A0908;
     display: grid;
     grid-template-areas:"img-marca1 img-marca2 img-marca3 img-marca4";
     align-items: center;
+    position: absolute;
+    top: 15%;
     .card-marca1{
         grid-area: img-marca1;
         display: flex;
@@ -81,20 +98,19 @@ $background-logo-section: #0A0908;
     gap: 20px;
     background-color: $background-section;
     width: 100vw;
-    height: 185vh;
+    height: 370vh;
     .logo-catalogo{
-        width: 100vw;
-        background-color: $background-logo-section;
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        position: relative;
-        right: 2rem;
-        top: -30px;
+        @include logos;
         .logo-marca{
             width: 30%;
-            height: 50%;
+            height: 100%;
         }        
+    }
+    .logo-catalogo2{
+        @include logos;
+    }
+    .gibson{
+        @extend .marcas-guitarra;
     }
 }
 
@@ -122,106 +138,62 @@ $background-logo-section: #0A0908;
 
     .card-catalogo1{
         grid-area: card-catalogo1;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
 
     .card-catalogo2{
         grid-area: card-catalogo2;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
     
     .card-catalogo3{
         grid-area: card-catalogo3;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
 
     .card-catalogo4{
         grid-area: card-catalogo4;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
 
     .card-catalogo5{
         grid-area: card-catalogo5;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
 
     .card-catalogo6{
         grid-area: card-catalogo6;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
     
     
     .card-catalogo7{
         grid-area: card-catalogo7;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
     
     
     .card-catalogo8{
         grid-area: card-catalogo8;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
     
     
     .card-catalogo9{
         grid-area: card-catalogo9;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
     
     
     .card-catalogo10{
         grid-area: card-catalogo10;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
     
     
     .card-catalogo10-off{
         display: none;
-        cursor: pointer;
-        &:hover span{
-            transform: scale(1.15);
-            visibility: visible;
-        }
+        @include guitarras-catalogo;
     }
 
     img{
