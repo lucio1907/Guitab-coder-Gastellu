@@ -1,7 +1,6 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
@@ -20,6 +19,7 @@
   "homepage": "https://github.com/lucio1907/Guitab-coder-Gastellu#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
-  }
+    "nodemon": "^2.0.16"
+  },
+  "description": ""
 }
