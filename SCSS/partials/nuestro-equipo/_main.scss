@@ -18,6 +18,11 @@ contenedor-h1-equipo{
     justify-content: center;
     text-align: justify;
     margin: 0 auto;
+    .parrafo-equipo{
+        margin-top: 10px;
+        font-family: 'Baloo 2', cursive;
+        font-size: 20px;
+    }
 }
 
 .logo{
@@ -39,9 +44,9 @@ contenedor-h1-equipo{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 30px;
+    padding: 80px;
     width: 80%;
-    height: 100%;
+    height: 100vh;
     gap: 15px;
     background-color: #0A0908;
     .cards-equipo{
@@ -72,6 +77,13 @@ contenedor-h1-equipo{
             align-items: center;
             font-family: 'Comfortaa', cursive;
             color: #0A0908;
+            text-align: center;
+            padding: 0 10px;
+            .description2{
+                display: flex;
+                position: absolute;
+                bottom: 3.25rem;
+            }
         }
     }
 }

@@ -2,6 +2,24 @@ $color-black: #0A0908;
 $color-white: #EDF2F4;
 $height-cards: 78%;
 /* ---------------------------------- Media queries --------------------------------- */
+@media screen and (max-width: 1623px) {
+    .grid-section-equipo{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .parrafo-carrera{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+    .grid-section-equipo{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 1335px) {
     .section-catalogo{
         height: 273vh;
@@ -16,6 +34,15 @@ $height-cards: 78%;
         .img-marcas-catalogo{
             width: 70%;
         }
+    }
+
+    .grid-section-equipo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-description{
+        bottom: 21.5rem;
     }
 }
 
@@ -102,6 +129,29 @@ $height-cards: 78%;
             top: 13px;
         }
     }
+
+    .grid-main-carrera .img-carreras {
+        height: 90%;
+    }
+
+    .grid-main-carrera{
+        .text1{
+            position: relative;
+            bottom: 1.93rem;
+        }
+        .text2{
+            position: relative;
+            bottom: 2.5rem;
+        }
+        .text3{
+            position: relative;
+            bottom: 2.12rem;
+        }
+        .text4{
+            position: relative;
+            bottom: 6.25rem;
+        }
+    } 
 }
 
 @media screen and (max-width: 1100px) {
@@ -149,6 +199,10 @@ $height-cards: 78%;
         font-family: 'Shadows Into Light', cursive;
         font-size: 24px;
         transition: all .6s;
+    }
+
+    .parrafo-carrera{
+        font-size: 13px;
     }
 }
 
@@ -235,6 +289,24 @@ $height-cards: 78%;
         img{
             width: 100px;
             height: 300px;
+        }
+    }
+
+    .grid-main-carrera{
+        .img-carrera2{
+            top: -32px;
+        }
+        .img-carrera3{
+            top: -1.43rem;
+        }
+        .img-carrera4 {
+            top: -3.43rem;
+        }
+        .img-carreras {
+            height: 100%;
+        }
+        .parrafo-carrera{
+            font-size: 16px;
         }
     }
 }
@@ -635,9 +707,10 @@ $height-cards: 78%;
 }
 
 @media screen and (max-width: 627px) {
-    .grid-section-equipo{
+    .grid-section-equipo {
         position: relative;
-        right: 1.375rem;
+        right: 5.375rem;
+        width: 90%;
     }
 
     .grid-section-equipo .cards-equipo {
@@ -675,6 +748,10 @@ $height-cards: 78%;
         .img-catalogo-off{
             height: 100%;
         }
+    }
+
+    .grid-section-equipo .div-description {
+        bottom: 18.06rem;
     }
 }
 
