@@ -1038,3 +1038,14 @@ $height-cards: 78%;
     }
 
 }
+
+@media screen and (max-width: 360px) {
+    .grid-main-catalogo{
+        .contenedor-h2{
+            top: 20%;
+        }
+    }
+    .grid-marcas{
+        top: 0;
+    }
+}
